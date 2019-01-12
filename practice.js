@@ -16,7 +16,12 @@
 
 //Code here
 
+var me = {
+  name : "Isaac Talley",
+  age : 21
+  }
 
+  //alert(me);
 
 ////////// PROBLEM 2 //////////
 
@@ -27,7 +32,16 @@
 
 //Code here
 
+var favoriteThings = {
 
+band : "WEDNESDAY CAMPENELLA",
+food : "Pavlova",
+person : "Lots of people",
+book : "Name of the Wind",
+movie : "Into the Spiderverse",
+holiday : "Christmas"
+
+}
 
 /*
   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
@@ -35,6 +49,8 @@
 
 //Code here
 
+favoriteThings.car = "AE86"
+favoriteThings.brand = "Stewart's"
 
 
 /*
@@ -43,7 +59,8 @@
 
 //Code here
 
-
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
 
 ////////// PROBLEM 3 //////////
 
@@ -59,13 +76,24 @@
 
 
 
+var backPack = {
+
+  
+
+}
+
+var item = "firstPocket"
+backPack['firstPocket'] = "chapstick"
+
+backPack.color = "Red, Blue and Yellow"
+
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
 
-
+//alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -75,7 +103,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
-
+console.log(backPack);
 
 ////////// PROBLEM 4 //////////
 
@@ -98,8 +126,8 @@ var user2 = {
 
 //Code Here
 
-
-
+user2.name = "Tyler S. McGinnis"
+user2.email = "tyler.mcginnis@devmounta.in"
 
 
 
@@ -121,7 +149,7 @@ var user2 = {
 
 //Code Here
 
-
+var methodCollection = {}
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
@@ -130,7 +158,8 @@ var user2 = {
 
 //Code Here
 
-
+methodCollection.alertHello = function(){alert('hello')};
+methodCollection.logHello  = function(){console.log('hello')};
 
 /*
   Now call your alertHello and logHello methods.
@@ -138,6 +167,8 @@ var user2 = {
 
 //Code Here
 
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -149,7 +180,12 @@ var user2 = {
 
 //Code Here
 
+function makePerson(name, birthday, ssn){
 
+  var person = {name, birthday, ssn}
+  return person;
+
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -160,4 +196,10 @@ var user2 = {
 
 //Code Here
 
+function makeCard (cardNumber, expirationDate, securityCode){
 
+  var creditCard = {cardNumber, expirationDate, securityCode}
+
+  return creditCard
+
+}
